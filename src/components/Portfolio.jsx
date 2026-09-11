@@ -8,7 +8,7 @@ import GlassCard from "./ui/GlassCard";
 export default function Portfolio() {
   const [active, setActive] = useState("Project");
   const filtered = PROJECTS.filter((p) => p.category === active);
-
+  const { t } = useLang();
   return (
     <section id="portfolio" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
