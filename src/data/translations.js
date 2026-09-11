@@ -1,21 +1,17 @@
 export const translations = {
   id: {
-  
     splashWelcome: "Selamat Datang di Website Portofolio Saya",
     splashFullscreen: "Layar Penuh",
-  
     navHome: "Beranda",
     navAbout: "Tentang",
     navPortfolio: "Portofolio",
     navContact: "Kontak",
-    
     heroHeadline: "Frontend Developer",
     heroIntro:
       "Saya membangun antarmuka web yang cepat, responsif, dan estetis dengan pengalaman pengguna terbaik di setiap piksel.",
     heroRoles: ["Frontend", "Backend", "Fullstack"],
     idCardLabel: "Kartu Identitas",
     idCardStatus: "Status: Aktif",
-    
     portfolioTitle: "Portofolio Pameran",
     portfolioSubtitle:
       "Kumpulan project, sertifikasi, dan teknologi yang saya kuasai selama berkarir di dunia pengembangan web.",
@@ -23,8 +19,11 @@ export const translations = {
     ctaDetail: "Lihat Detail",
     ctaCertificate: "Lihat Sertifikat",
     ctaStack: "Lihat Stack",
-    placeholderCategory: { Project: "Project", Certification: "Sertifikasi", "Tech Stack": "Tech Stack" },
-    
+    placeholderCategory: {
+      Project: "Project",
+      Certification: "Sertifikasi",
+      "Tech Stack": "Tech Stack",
+    },
     contactTitle: "Hubungi Saya",
     contactSubtitle: "Mari berkolaborasi dan wujudkan ide bersama.",
     contactCardTitle: "Hubungi Saya",
@@ -33,7 +32,6 @@ export const translations = {
     labelEmail: "Email",
     labelMessage: "Pesan",
     sendBtn: "Kirim Pesan",
-    
     commentsTitle: "Komentar",
     commentsDesc: "Tinggalkan pesan dan kesan Anda di sini.",
     labelYourName: "Nama Anda",
@@ -44,7 +42,6 @@ export const translations = {
       { name: "Budi Santoso", time: "5 jam lalu", text: "Kerja sama dalam project kemarin sangat menyenangkan, hasilnya melebihi ekspektasi." },
       { name: "Dewi Lestari", time: "1 hari lalu", text: "Sangat detail dan komunikatif. Recommended untuk project frontend!" },
     ],
-    
     footerRights: "Hak Cipta Dilindungi.",
   },
   en: {
@@ -67,7 +64,11 @@ export const translations = {
     ctaDetail: "View Details",
     ctaCertificate: "View Certificate",
     ctaStack: "View Stack",
-    placeholderCategory: { Project: "Project", Certification: "Certification", "Tech Stack": "Tech Stack" },
+    placeholderCategory: {
+      Project: "Project",
+      Certification: "Certification",
+      "Tech Stack": "Tech Stack",
+    },
     contactTitle: "Contact Me",
     contactSubtitle: "Let's collaborate and bring ideas to life.",
     contactCardTitle: "Contact Me",
@@ -89,4 +90,3 @@ export const translations = {
     footerRights: "All rights reserved.",
   },
 };
-    
