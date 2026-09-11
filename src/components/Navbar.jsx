@@ -9,7 +9,7 @@ export default function Navbar() {
     <motion.header
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 5.2, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ delay: 4.2, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className="fixed top-0 inset-x-0 z-40"
     >
       <nav className="glass !rounded-none border-x-0 border-t-0 mx-auto max-w-6xl mt-4 rounded-full px-6 md:px-8 py-3 flex items-center justify-between">
