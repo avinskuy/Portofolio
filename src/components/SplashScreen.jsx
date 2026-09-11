@@ -1,6 +1,7 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Github, Linkedin, Instagram, Twitter, Maximize2 } from "lucide-react";
 import { PROFILE, SOCIALS } from "../data/content";
+import { useLang } from "../context/LanguageContext";
 
 const ICONS = { github: Github, linkedin: Linkedin, instagram: Instagram, twitter: Twitter };
 
@@ -14,6 +15,8 @@ const item = {
 };
 
 export default function SplashScreen({ onDone }) {
+  const { t } = useLang();
+
   return (
     <motion.div
       className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-ink px-6"
@@ -37,14 +40,17 @@ export default function SplashScreen({ onDone }) {
           })}
         </motion.div>
 
-        <TypeText text="Welcome to my Portfolio Website" className="text-lg md:text-2xl text-dim font-light tracking-wide" />
+        <motion.p
+          variants={item}
+          className="text-lg md:text-2xl text-dim font-light tracking-wide max-w-md">
+          {t.splashWelcome}
+        </motion.p>
 
         <motion.button
           variants={item}
           onClick={onDone}
-          className="glass glass-hover rounded-full px-8 py-3 mt-10 flex items-center gap-2 text-sm text-dim hover:text-white"
-        >
-          <Maximize2 size={16} /> Layar Penuh
+          className="glass glass-hover rounded-full px-8 py-3 mt-10 flex items-center gap-2 text-sm text-dim hover:text-white">
+          <Maximize2 size={16} /> {t.splashFullscreen}
         </motion.button>
       </motion.div>
 
@@ -52,32 +58,9 @@ export default function SplashScreen({ onDone }) {
         className="absolute bottom-0 left-0 h-[2px] bg-white/40"
         initial={{ width: "0%" }}
         animate={{ width: "100%" }}
-        transition={{ duration: 4.5, ease: "easeInOut" }}
+        transition={{ duration: 4, ease: "easeInOut" }}
       />
     </motion.div>
   );
-}
-
-function TypeText({ text, className }) {
-  return (
-    <span className={className}>
-      {text.split("").map((ch, i) => (
-        <motion.span
-          key={i}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 + i * 0.035, duration: 0.05 }}
-        >
-          {ch}
-        </motion.span>
-      ))}
-      <motion.span
-        animate={{ opacity: [1, 0, 1] }}
-        transition={{ repeat: Infinity, duration: 0.9 }}
-        className="text-white"
-      >
-        |
-      </motion.span>
-    </span>
-  );
-    }
+        }
+        
