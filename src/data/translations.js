@@ -1,0 +1,92 @@
+export const translations = {
+  id: {
+  
+    splashWelcome: "Selamat Datang di Website Portofolio Saya",
+    splashFullscreen: "Layar Penuh",
+  
+    navHome: "Beranda",
+    navAbout: "Tentang",
+    navPortfolio: "Portofolio",
+    navContact: "Kontak",
+    
+    heroHeadline: "Frontend Developer",
+    heroIntro:
+      "Saya membangun antarmuka web yang cepat, responsif, dan estetis dengan pengalaman pengguna terbaik di setiap piksel.",
+    heroRoles: ["Frontend", "Backend", "Fullstack"],
+    idCardLabel: "Kartu Identitas",
+    idCardStatus: "Status: Aktif",
+    
+    portfolioTitle: "Portofolio Pameran",
+    portfolioSubtitle:
+      "Kumpulan project, sertifikasi, dan teknologi yang saya kuasai selama berkarir di dunia pengembangan web.",
+    tabs: ["Project", "Sertifikasi", "Tech Stack"],
+    ctaDetail: "Lihat Detail",
+    ctaCertificate: "Lihat Sertifikat",
+    ctaStack: "Lihat Stack",
+    placeholderCategory: { Project: "Project", Certification: "Sertifikasi", "Tech Stack": "Tech Stack" },
+    
+    contactTitle: "Hubungi Saya",
+    contactSubtitle: "Mari berkolaborasi dan wujudkan ide bersama.",
+    contactCardTitle: "Hubungi Saya",
+    contactCardDesc: "Isi formulir di bawah dan saya akan membalas secepatnya.",
+    labelName: "Nama",
+    labelEmail: "Email",
+    labelMessage: "Pesan",
+    sendBtn: "Kirim Pesan",
+    
+    commentsTitle: "Komentar",
+    commentsDesc: "Tinggalkan pesan dan kesan Anda di sini.",
+    labelYourName: "Nama Anda",
+    labelYourComment: "Komentar Anda",
+    postBtn: "Posting Komentar",
+    comments: [
+      { name: "Rina Kartika", time: "2 jam lalu", text: "Portofolionya keren banget! Desainnya clean dan animasinya halus. Sukses terus! 🚀" },
+      { name: "Budi Santoso", time: "5 jam lalu", text: "Kerja sama dalam project kemarin sangat menyenangkan, hasilnya melebihi ekspektasi." },
+      { name: "Dewi Lestari", time: "1 hari lalu", text: "Sangat detail dan komunikatif. Recommended untuk project frontend!" },
+    ],
+    
+    footerRights: "Hak Cipta Dilindungi.",
+  },
+  en: {
+    splashWelcome: "Welcome to my Portfolio Website",
+    splashFullscreen: "Full Screen",
+    navHome: "Home",
+    navAbout: "About",
+    navPortfolio: "Portfolio",
+    navContact: "Contact",
+    heroHeadline: "Frontend Developer",
+    heroIntro:
+      "I build fast, responsive, and aesthetic web interfaces with the best user experience in every pixel.",
+    heroRoles: ["Frontend", "Backend", "Fullstack"],
+    idCardLabel: "ID Card",
+    idCardStatus: "Status: Active",
+    portfolioTitle: "Portfolio Showcase",
+    portfolioSubtitle:
+      "A collection of projects, certifications, and technologies I've mastered throughout my web development career.",
+    tabs: ["Project", "Certification", "Tech Stack"],
+    ctaDetail: "View Details",
+    ctaCertificate: "View Certificate",
+    ctaStack: "View Stack",
+    placeholderCategory: { Project: "Project", Certification: "Certification", "Tech Stack": "Tech Stack" },
+    contactTitle: "Contact Me",
+    contactSubtitle: "Let's collaborate and bring ideas to life.",
+    contactCardTitle: "Contact Me",
+    contactCardDesc: "Fill in the form below and I'll get back to you as soon as possible.",
+    labelName: "Name",
+    labelEmail: "Email",
+    labelMessage: "Message",
+    sendBtn: "Send Message",
+    commentsTitle: "Comments",
+    commentsDesc: "Leave your message and impressions here.",
+    labelYourName: "Your Name",
+    labelYourComment: "Your Comment",
+    postBtn: "Post Comment",
+    comments: [
+      { name: "Rina Kartika", time: "2 hours ago", text: "This portfolio is amazing! Clean design and smooth animations. Keep it up! 🚀" },
+      { name: "Budi Santoso", time: "5 hours ago", text: "Working together on yesterday's project was a great experience, results exceeded expectations." },
+      { name: "Dewi Lestari", time: "1 day ago", text: "Very detail-oriented and communicative. Highly recommended for frontend projects!" },
+    ],
+    footerRights: "All rights reserved.",
+  },
+};
+    
