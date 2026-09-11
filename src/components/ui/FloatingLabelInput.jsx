@@ -18,10 +18,18 @@ export default function FloatingLabelInput({ label, type = "text", textarea = fa
   return (
     <div className="relative">
       <div className="glass rounded-xl flex items-start gap-3 focus-within:border-white/30 transition-colors">
-        <span className="pl-4 pt-4 text-mist">{icon}</span>
+        
+        {icon && <span className="pl-4 pt-4 text-mist">{icon}</span>}
+
         <div className="flex-1 relative">
-          {textarea ? <textarea rows={4} {...common} /> : <input type={type} {...common} />}
+          {textarea ? (
+            <textarea rows={4} {...common} />
+          ) : (
+            <input type={type} {...common} />
+          )}
+
           <motion.label
+            key={label}
             animate={{
               y: active ? 4 : 22,
               fontSize: active ? "0.7rem" : "0.85rem",
@@ -35,4 +43,4 @@ export default function FloatingLabelInput({ label, type = "text", textarea = fa
       </div>
     </div>
   );
-              }
+      }
