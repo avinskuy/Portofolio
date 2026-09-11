@@ -21,12 +21,10 @@ export default function SplashScreen({ onDone }) {
       exit={{ opacity: 0, transition: { duration: 0.8, ease: "easeInOut" } }}
     >
       <motion.div variants={container} initial="hidden" animate="show" className="flex flex-col items-center text-center">
-        {/* Logo teks */}
         <motion.h1 variants={item} className="text-4xl md:text-5xl font-bold text-white tracking-tight">
           {PROFILE.logo}
         </motion.h1>
 
-        {/* Ikon sosial bergaya mobile present */}
         <motion.div variants={item} className="flex gap-4 mt-8 mb-6">
           {SOCIALS.map((s) => {
             const Icon = ICONS[s.icon];
@@ -39,10 +37,8 @@ export default function SplashScreen({ onDone }) {
           })}
         </motion.div>
 
-        {/* Teks utama dengan efek typing */}
         <TypeText text="Welcome to my Portfolio Website" className="text-lg md:text-2xl text-dim font-light tracking-wide" />
 
-        {/* Tombol layar penuh */}
         <motion.button
           variants={item}
           onClick={onDone}
@@ -52,7 +48,6 @@ export default function SplashScreen({ onDone }) {
         </motion.button>
       </motion.div>
 
-      {/* Progress bar halus */}
       <motion.div
         className="absolute bottom-0 left-0 h-[2px] bg-white/40"
         initial={{ width: "0%" }}
