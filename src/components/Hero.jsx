@@ -76,7 +76,7 @@ export default function Hero() {
             <p className="text-sm text-mist mt-1">{PROFILE.role}</p>
             <div className="mt-5 h-px bg-white/10" />
             <div className="mt-4 flex justify-between text-[11px] text-mist">
-              <span>ID: AFIQ-2024</span><span>{t.idCardStatus}</span>
+              <span>ID: AFIQ-2026</span><span>{t.idCardStatus}</span>
             </div>
           </motion.div>
 
